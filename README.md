@@ -6,6 +6,9 @@
 
 ## Vấn đề giải quyết: 
 - Nhiều user đặt seats cùng một thời điểm
+- Xem thông tin seats của một room 
+- Tạo Room
+- Tạo Seat (theo room)
 
 ## Giải pháp: 
 1.  Sử dụng tính nguyên tử - Atomic trong mongodb.
