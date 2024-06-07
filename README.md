@@ -49,3 +49,24 @@ Booking {}
 
 
 
+## How to run this code
+```typescript
+1. clone source code
+2. pnpm i (or yarn install || npm install)
+3. create .env.local with the following environment variables
+MONGO_URI=
+REDIS_HOST=
+REDIS_PORT=
+REDIS_PASSWORD=
+4. npm run local || pnpm run local || yarn run local
+5. api documents: http://localhost:3000/docs
+```
+
+#### ab command
+
+ab --h for more information
+
+```
+ab -n 10 -c 10 http://localhost:3000/booking/test-bookings
+ab -n 10 -c 10 http://localhost:3000/booking/test-bookings-redis
+```
